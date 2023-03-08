@@ -7,22 +7,22 @@ function calculateSalary(role) {
   switch(role)
   {
     case "ceo":
-      console.log(role + " => 2200");
-      break;
+      return(role + " => 2200");
+      
       case "manager":
-        console.log(role + " => 1800");
-        break;
+        return(role + " => 1800");
+        
         case "cto":
-          console.log(role + " => 1800");
-          break;
+          return(role + " => 1800");
+          
           case "developer":
-            console.log(role + " => 1500");
-            break;
+            return(role + " => 1500");
+            
             case "other":
-              console.log(role + " => 1000");
-              break;
+              return(role + " => 1000");
+              
               default:
-                console.log("nussuno valore corrisponde")
+                return("nussuno valore corrisponde");
   }
 }
 
