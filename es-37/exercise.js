@@ -1,9 +1,9 @@
-function printName(){
+function printName(name){
     let helloName = "Hello Jonh";
 
 function inner(){
-   return helloName;
+   return helloName + name;
              }
              return inner()
 }
-console.log(printName()) 
+console.log(printName('paolo')) 
