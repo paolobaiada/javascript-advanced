@@ -9,4 +9,4 @@ const sumUntil = (maxValue) => {
    return sum;
 }
 
-console.log(sumUntil(9));
+console.log(sumUntil(5));
