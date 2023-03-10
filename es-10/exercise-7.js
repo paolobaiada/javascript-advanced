@@ -4,9 +4,9 @@ const sumUntil = (maxValue) => {
   for(i = 0; i <= maxValue; i++)
   {
     sum = sum + i;
-     
-  }
-  console.log(sum);
+    
+   }
+   return sum;
 }
 
-sumUntil(5);
+console.log(sumUntil(5));

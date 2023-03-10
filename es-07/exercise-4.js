@@ -1,7 +1,8 @@
-function nicknameMap(persons) {
+ function nicknameMap(){
   let i;
+  let oggetto;
   for(i = 0; i < 10; i++){
-     return Object.values(persons);
+     console.log(Object.values(persons[i]).join("-"));
   
   }
 }
@@ -19,6 +20,5 @@ const persons = [
   { name: 'Alice', age: 28 }
 ];
 
-const nicknames = nicknameMap(persons);
-console.log(persons);
-console.log(nicknames);
+nicknameMap();
+
