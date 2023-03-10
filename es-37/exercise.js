@@ -6,7 +6,5 @@ function inner(){
              }
              return inner()
 }
-setTimeout(() =>{
     console.log(printName());
-},1000)
  
