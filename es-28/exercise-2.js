@@ -1,11 +1,17 @@
 const order = {
-    customer : "chris", 
-   address : "1165", 
-    city : "roma"  
+    customer :{
+      address :{
+       
+      }
+    }
+   
 };
 
-if (order?.customer?.address?.city) {
+if (!order?.customer?.address?.city) {
   console.log('City is required');
+}
+else {
+  console.log("city is declared")
 }
 
 /* order && order.customer && order.customer.address && !order.customer.address.city */
