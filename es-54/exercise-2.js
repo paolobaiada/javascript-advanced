@@ -1,5 +1,5 @@
 function nicknameMap(persons) {
-  const mapp = persons.map(person => person);
+  const mapp = persons.map(person => person.name + "-" + person.age);
   return mapp;
 }
 
