@@ -28,7 +28,7 @@ class Circle {
 }
 
 class AreaCalculator {
-static calculate(figure){
+  static calculate(figure){
   return figure.area();
 
   }
