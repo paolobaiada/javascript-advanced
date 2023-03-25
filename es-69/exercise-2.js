@@ -1,22 +1,16 @@
-
-   const person = {
-    id: 1,
-    firstName: 'Mario',
-    lastName: 'Rossi',
-    age: 25
-  }; 
-  function a(...rest){
-   
-      const personInfo = {
-      firstName: person.firstName,
-      lastName: person.lastName,
-      age: person.age
-    };  
-    return rest;
-  }
- 
-  
+const person = {
+  id: 1,
+  firstName: 'Mario',
+  lastName: 'Rossi',
+  age: 25
+};
+const {id, ...personInfo} = person;
 
 
+/* const personInfo = {
+  firstName: person.firstName,
+  lastName: person.lastName,
+  age: person.age
+}; */
 
-console.log(a(1,"Mario","Rossi",25));
+console.log(id, personInfo);
