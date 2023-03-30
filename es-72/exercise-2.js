@@ -1,3 +1,4 @@
+
 class Person {
   constructor(id, firstName, lastName, age) {
     this.id = id;
@@ -9,11 +10,14 @@ class Person {
   toJson() {
     return JSON.stringify(this);
   }
-  fromJson(json){
-    return json;
+  
+  static fromJson(json){
+   let obj = JSON.parse(json);
+    return new Person(obj.id, obj.firstName, obj.lastName, obj.age);
+  
   }
 }
 
  const json = '{"id":1,"firstName":"Mario","lastName":"Rossi","age":25}';
-const developer = JSON.parse(json);
+const developer = Person.fromJson(json);
 console.log(developer);  
