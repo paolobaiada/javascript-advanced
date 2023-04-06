@@ -1,10 +1,10 @@
 function repeatHello(callback){ 
     
- setInterval(() => console.log(callback),1000);
+ setInterval(() => callback(),1000);
 
 }
 function hello(){
-    return "Hello"
+    console.log("Hello")
 }
 
-repeatHello(hello())
+repeatHello(hello)
