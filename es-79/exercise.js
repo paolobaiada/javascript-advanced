@@ -1,13 +1,13 @@
 
 function repeatHello(callback){ 
     
-    let id = setInterval(() => console.log(callback),1000);
+    let id = setInterval(() => callback(),1000);
    setTimeout(() => {
     clearInterval(id)
    }, 5000);
    }
    function hello(){
-       return "Hello"
+       console.log("Hello")
    }
    
-   repeatHello(hello())
+   repeatHello(hello)
