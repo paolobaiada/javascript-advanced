@@ -21,5 +21,6 @@ function secondPromise(arg){
 }
 
 firstPromise(isLogged)
- .then(el => console.log(secondPromise(el)))
+ .then(el => secondPromise(el))
+ .then(el => console.log(el))
 .catch(err => console.log(err)) 
