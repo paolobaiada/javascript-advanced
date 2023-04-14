@@ -6,7 +6,7 @@ const user = {
 
 
 const person = JSON.stringify(user);
-localStorage.setItem("key","person") 
+localStorage.setItem("key",person) 
 
    console.log(JSON.parse(localStorage.getItem("key"))) 
 
