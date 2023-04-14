@@ -5,9 +5,8 @@ const user = {
 };
 
 
+const person = JSON.stringify(user);
+localStorage.setItem("key","person") 
 
-/* const el = JSON.parse(local);
-console.log(el) */
-if (typeof window !== 'undefined'){
-  console.log(JSON.parse(localStorage.getItem("key")))
-}
+   console.log(JSON.parse(localStorage.getItem("key"))) 
+

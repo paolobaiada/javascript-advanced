@@ -4,4 +4,4 @@ const user = {
   age: 25,
 };
 const getEl = JSON.stringify(user);
-localStorage.setItem(key, getEl)
+localStorage.setItem(key,getEl)
